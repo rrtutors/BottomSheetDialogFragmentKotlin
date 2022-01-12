@@ -6,11 +6,6 @@ import android.widget.Button
 import android.widget.LinearLayout
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomsheet.BottomSheetBehavior
-import com.mobiraft.bottomsheetexample.ModalBottomSheet
-import android.widget.FrameLayout
-
-
-
 
 class MainActivity : AppCompatActivity() {
 
@@ -55,14 +50,6 @@ class MainActivity : AppCompatActivity() {
         persistentBtn.setOnClickListener(View.OnClickListener {
             expandCollapseSheet()
         })
-
-//        bottomSheetDialogBtn.setOnClickListener{
-//            val modalSheetView = layoutInflater.inflate(R.layout.fragment_modal_bottom_sheet,null)
-//            val dialog = BottomSheetDialog(this)
-//            dialog.setContentView(modalSheetView)
-//            dialog.show()
-//
-//        }
 
         bottomSheetDialogFragmentBtn.setOnClickListener {
             val modalbottomSheetFragment = ModalBottomSheet()
